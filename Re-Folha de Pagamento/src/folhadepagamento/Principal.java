@@ -213,9 +213,7 @@ public class Principal{
 					trash = input.nextLine();
 				}
 				correctInput = false;
-				boolean check;
-				check = employee.containsKey(currentemployeeid);
-				if(check) {
+				if(employee.containsKey(currentemployeeid)) {
 					employee.remove(currentemployeeid);
 					System.out.println("Removido");
 				}
@@ -244,9 +242,7 @@ public class Principal{
 					trash = input.nextLine();
 				}
 				correctInput = false;
-				boolean check;
-				check = employee.containsKey(currentemployeeid);
-				if(check) {
+				if(employee.containsKey(currentemployeeid)) {
 					if(employee.get(currentemployeeid).getType().equals("horista")) {
 						int arrival = -1,exit = -1;
 						if(employee.get(currentemployeeid) instanceof Employees) {
@@ -344,9 +340,7 @@ public class Principal{
 					trash = input.nextLine();
 				}
 				correctInput = false;
-				boolean check;
-				check = employee.containsKey(currentemployeeid);
-				if(check) {
+				if(employee.containsKey(currentemployeeid)) {
 					if(employee.get(currentemployeeid).getType().equals("comissionado")) {
 						if(employee.get(currentemployeeid) instanceof Employees) {
 							double sellvalue = 0;
@@ -406,9 +400,7 @@ public class Principal{
 					trash = input.nextLine();
 				}
 				correctInput = false;
-				boolean check;
-				check = employee.containsKey(currentemployeeid);
-				if(check) {
+				if(employee.containsKey(currentemployeeid)) {
 					if(employee.get(currentemployeeid).getSyndicatestatus().equals("1")){
 						if(employee.get(currentemployeeid)instanceof Employees) {
 							double taxvalue = 0;
@@ -463,9 +455,7 @@ public class Principal{
 					trash = input.nextLine();
 				}
 				correctInput = false;
-				boolean check;
-				check = employee.containsKey(currentemployeeid);
-				if(check) {
+				if(employee.containsKey(currentemployeeid)) {
 					Employees.EditProfile(employee,currentemployeeid,input);
 					Undo_Redo.Save(option1,day,month,year,dayofweek,totalsize,positioninarray,employee);
 				}
@@ -592,9 +582,7 @@ public class Principal{
 					trash = input.nextLine();
 				}
 				correctInput = false;
-				boolean check;
-				check = employee.containsKey(currentemployeeid);
-				if(check) {
+				if(employee.containsKey(currentemployeeid)) {
 					if(employee.get(currentemployeeid) instanceof Employees) {
 						String entry;
 						System.out.println("Agenda de Pagamento atual - O Empregado e pago: " + employee.get(currentemployeeid).getPaymentschedule());
